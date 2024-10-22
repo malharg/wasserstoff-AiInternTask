@@ -1,0 +1,7 @@
+pymongo
+PyPDF2
+requests
+collections
+io
+numpy
+nltk
