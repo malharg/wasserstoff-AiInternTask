@@ -50,13 +50,13 @@ def process_pdf(pdf_name, pdf_url):
             summary = summarize_textrank(c_text)
             keywords = extract_keywords(text)
 
-            # Prepare MongoDB document
+            #  MongoDB document
             document = {
                 "pdf_name": pdf_name,
                 "url": pdf_url,
                 "summary": summary,
                 "keywords": keywords,
-                "status": "processed"  # Indicate the processing status
+                "status": "processed"  
             }
             collection.update_one(
                 {"pdf_name": pdf_name},

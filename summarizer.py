@@ -29,7 +29,7 @@ def clean_text(text):
     # Extract dates
     dates = re.findall(date_pattern, text)
 
-    # Remove newline characters and replace them with spaces
+    # Remove newline characters 
     text = text.replace('\n', ' ')
 
     # Remove any lingering '\n' attached to words
